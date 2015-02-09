@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div id="weapper">
+	<div id="header">
+		<h1 class="blanco negrita">My weblog</h1>
+		<h2 class="blanco negrita">a lot of effort went into making this effortless</h2>
+		
+		<ul>
+			<li class="blanco negrita link_puntos">home</li>
+			<li class="negrita link_puntos">blog</li>
+			<li class="blanco negrita link_puntos">gallery</li>
+			<li class="blanco negrita link_puntos">about</li>
+		</ul>	
+		
+	</div>
+	<div id="content">
+	<!--Inicio entrada1-->
+		<div>
+			<div class="left">
+				<a class="link_puntos negrita">Travel day</a>
+				<a class="link_puntos" href="">John Doe coments</a>
+			</div>
+			<div class="right">fecha</div>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus expedita possimus porro fugiat odit aut dolores ratione sunt, quod facilis architecto quis laboriosam soluta aspernatur. Numquam, quam rem harum id?</div>
+		</div>
+		<!--fin entrada1-->
+		<!--Inicio entrada2-->
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<th>Column1</th>
+						<th>Column2</th>
+						<th>Column3</th>
+						<th>Column4</th>
+						<th>Column5</th>
+						<th>Column6</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<th>Total</th>
+						<th>345</th>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>Loren ipsun</td>
+						<td><a href="">john</a></td>
+						<td>fecha</td>
+						<td>Lorem</td>
+						<td>sed in porta</td>
+						<td>343</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--fin entrada2-->
+		<!--Inicio lista-->
+		<div>
+			<div>
+				<ul class="margen_izq">
+					<span class="negrita">October</span>
+					<li class="margen_izq">
+						<span class="negrita">5</span>
+						<a href="">Vos vestros servate</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="margen_izq">
+					<span class="negrita">September</span>
+					<li class="margen_izq"> 
+						<span class="negrita">30</span>
+						<a href="" class="link_puntos">Ut sementem feceris ita</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="margen_izq">
+					<span class="negrita">August</span>
+					<li class="margen_izq">
+						<span class="negrita">4</span>
+						<a href="">Risu inepto res</a>
+					</li>
+					<li class="margen_izq">
+						<span class="negrita">23</span>
+						<a href="" class="link_puntos">Vitanda est improba</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!--fin lista-->
+	</div>
+	<div id="footer">
+		@2011 <span class="link_puntos">Jhon Doe</span>
+	</div>
+</div>
+</body>
+</html>
