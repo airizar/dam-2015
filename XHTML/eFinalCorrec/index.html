@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="weapper"><!-- id="wrapper" -->
+		<div class="header"><!-- id="header" -->
+			<h1 class="blanco negrita">My weblog</h1>
+			<!-- <h2 class="blanco negrita">a lot of effort went into making this effortless</h2> -->
+			<!--La descripcion del titulo de la pagina no tiene mayor importancia, ya que no cambia nunca y en SEO se utiliza mucho la busqueda te contenido cambiante-->
+			<p class="blanco negrita">a lot of effort went into making this effortless</p>
+			<ul class="menu">
+				<li class="blanco negrita link_puntos"><a href="">home</a></li>
+				<li class="negrita link_puntos"><a href="">blog</a></li>
+				<li class="blanco negrita link_puntos"><a href="">gallery</a></li>
+				<li class="blanco negrita link_puntos"><a href="">about</a></li>
+			</ul>	
+			<!-- 
+			Las dos opciones son válidas
+			<span class="menu">
+				<a href="">home</a>
+				<a href="">blog</a>
+				<a href="">gallery</a>
+				<a href="">about</a>
+			</span> -->
+		</div>
+		<div class="content"><!-- id="content" -->
+			<!--es conveniente crear un bloque de articulos para poder cambiar la posicion de las cajas en un futuro-->
+			<div class="articulos">
+				<div class="articulo">
+					<div class="left">
+						<h2><a class="link_puntos negrita" href="pagina1.html">Travel day</a></h2>
+						<span>
+						<a class="link_puntos" href="">John Doe</a>
+						<a class="link_puntos" href="">coments</a>
+						</span>
+
+					</div>
+					<!-- desde css modificaremos el comportamiento en caso de ser necesario
+					<div class="right">fecha</div> -->
+					<span class="bloque right">fecha</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus expedita possimus porro fugiat odit aut dolores ratione sunt, quod facilis architecto quis laboriosam soluta aspernatur. Numquam, quam rem harum id?</p>
+				</div>
+				<div>
+					<div class="left">
+						<h2><a class="link_puntos negrita" href="pagina1.html">i'm going to Prague!</a></h2>
+						<a class="link_puntos" href="">John Doe 5 coments</a>
+					</div>
+					<div class="right">fecha</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus expedita possimus porro fugiat odit aut dolores ratione sunt, quod facilis architecto quis laboriosam soluta aspernatur. Numquam, quam rem harum id?</p>
+				</div>
+			</div>
+			<div class="archivo">
+				<ol>
+				<!--No se aconseja dejar texto sin ninguna etiqueta por lo que el mes lo metemos en un span-->
+					<li><span>octubre</span>
+						<ol>
+							<li><span class="dia">5</span><a href=""></a>Lorem ipsum dolor sit amet</li>
+						</ol>
+						
+					</li>
+					<li><span>septiembre</span>
+						<ol>
+							<li><span class="dia">7</span><a href=""></a>Lorem ipsum dolor sit amet</li>
+						</ol>
+						
+					</li>
+					<li><span>julio/span>
+						<ol>
+							<li><span class="dia">23</span><a href=""></a>Lorem ipsum dolor sit amet</li>
+							<li><span class="dia">6</span><a href=""></a>Lorem ipsum dolor sit amet</li>
+						</ol>
+						
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="footer"><!-- id="footer"-->			<span> 2011</span><a href="" class="link_puntos">Jhon Doe</a>
+		</div>
+	</div>
+</body>
+</html>
