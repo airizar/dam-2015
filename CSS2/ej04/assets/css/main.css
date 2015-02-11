@@ -1,0 +1,37 @@
+
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	zoom:1;
+}
+
+ul { /*los lis heredaran estas propiedades*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu>li {
+	float: left;
+	border:1px solid #eee;
+	padding: 5px 10px;
+	position: relative;
+
+}
+.submenu{
+	display: none;
+	position: absolute;
+	border:1px solid #f00;
+	top: 100%;
+	left: 0;
+
+}
+.menu> li:hover .submenu{
+	display: block;
+
+}
