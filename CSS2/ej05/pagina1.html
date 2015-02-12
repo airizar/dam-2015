@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../normalize.css" title="style" />
+	 <link rel="stylesheet" type="text/css" href="assets/css/main.css" title="style" />
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper"><!-- id="wrapper" -->
+		<div class="header"><!-- id="header" -->
+			<h1>My weblog</h1>
+			<!-- <h2 class="blanco negrita">a lot of effort went into making this effortless</h2> -->
+			<!--La descripcion del titulo de la pagina no tiene mayor importancia, ya que no cambia nunca y en SEO se utiliza mucho la busqueda te contenido cambiante-->
+			<p>a lot of effort went into making this effortless</p>
+			<ul class="menu">
+				<li><a href="">home</a></li>
+				<li><a href="">blog</a></li>
+				<li><a href="">gallery</a></li>
+				<li><a href="">about</a></li>
+			</ul>	
+			<!-- 
+			Las dos opciones son válidas
+			<span class="menu">
+				<a href="">home</a>
+				<a href="">blog</a>
+				<a href="">gallery</a>
+				<a href="">about</a>
+			</span> -->
+		</div>
+		<div class="content"><!-- id="content" -->
+			<!--es conveniente crear un bloque de articulos para poder cambiar la posicion de las cajas en un futuro-->
+			<div class="articulos">
+				<div class="articulo">
+				<span class="fright">fecha</span>
+						<h2 class="h2" ><a href="pagina1.html">Travel day</a></h2>
+						<span>
+						<a  href="">John Doe</a>
+						<a href="">coments</a>
+						
+
+					
+					<!-- desde css modificaremos el comportamiento en caso de ser necesario
+					<div class="right">fecha</div> -->
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus expedita possimus porro fugiat odit aut dolores ratione sunt, quod facilis architecto quis laboriosam soluta aspernatur. Numquam, quam rem harum id?</p>
+					<table class="tabla">
+					<thead>
+						<tr>
+							<th>Column1</th>
+							<th>Column2</th>
+							<th>Column3</th>
+							<th>Column4</th>
+							<th>Column5</th>
+							<th>Column6</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th  colspan="5" class="aright">Total</th>
+							<th  class="aright">345</th>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td>Loren ipsun</td>
+							<td><a href="">john</a></td>
+							<td>fecha</td>
+							<td>Lorem</td>
+							<td>sed in porta</td>
+							<td class="aright">343</td>
+						</tr>
+						<tr>
+							<td>est delectus impedit.</td>
+							<td><a href="">john</a></td>
+							<td>fecha</td>
+							<td>ipsun</td>
+							<td>vel nostrum cum</td>
+							<td class="aright">34</td>
+						</tr>
+						<tr>
+							<td>Loren ipsun</td>
+							<td><a href="">john</a></td>
+							<td>fecha</td>
+							<td>Lorem</td>
+							<td>sed in porta</td>
+							<td class="aright">343</td>
+						</tr>
+						<tr>
+							<td>est delectus impedit.</td>
+							<td><a href="">john</a></td>
+							<td>fecha</td>
+							<td>ipsun</td>
+							<td>vel nostrum cum</td>
+							<td class="aright">34</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="comments-block">
+					<div class="comments"><h3 class="h2 underline" id="comments">Coments</h3>
+						<ul>
+							<li class="clearfix">
+								<div class="fleft avatar">
+									<img class="img-responsive" src="assets/imagenes/icono.png" alt="">
+								</div>
+								<div class="fleft comment">
+									<a href="">autor</a>
+									<span>fecha</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique recusandae doloribus placeat iure laborum possimus eveniet maiores error? Iusto eligendi ipsum obcaecati, magnam consectetur aliquam dolor assumenda maxime eum facilis.</p>
+								</div>
+						</ul>
+						
+					</div>
+					<div class="new-comment">
+					<h3 class="h2 underline" id="comments">new comment</h3>
+						<form class="form form-"action="" method="">
+							<div class="row">
+								<label for="name">Name</label>
+								<input id="name" type="text">
+							</div>
+							<div class="row">
+								<label for="mail">Mail</label>
+								<input id="mail" type="text">
+							</div>
+							<div class="row">
+								<label for="webside">webside</label>
+								<input id="webside" type="text">
+							</div>
+							<div class="row">
+								<label for="comment">Comment</label>
+								<textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+							</div>
+							<input class="boton" type="submit" value="post comment" name="enviar">
+			</form>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		</div>
+		<div class="footer"><!-- id="footer"-->			<span> 2011</span><a href="" class="link_puntos">Jhon Doe</a>
+		</div>
+	</div>	
+</body>
+</html>

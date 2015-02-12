@@ -1,0 +1,151 @@
+body {
+	font: 400 9pt/1.6 Arial, Helvetica, sans-serif;
+}
+
+h1,ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+h1{
+	font-size: 1em;
+	margin-bottom: 2em;
+}
+a, a:visited, a:link, a:active{
+    text-decoration: none;
+    border-bottom:0.1em dotted transparent;
+}
+.fleft{
+	float: left;
+}
+.fright{
+	float: right;
+}
+.wrapper{
+	margin:0 auto;
+	width: 960px;/*Anchura extandar para trabajar con grids*/
+}
+.header{
+	background-color: black;
+	color:white;
+	padding: 25px 10px;
+	text-align: center;
+}
+.header a, .header a:visited, .header a:link, .header a:active{
+	color: white;
+	border-color: white;
+}
+.header p{
+	margin-bottom: 2.5em;
+	margin-top: 2.5em;
+}
+.menu li{
+	display: inline;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	text-transform: lowercase;
+}
+.articulo{
+	margin:25px 0;
+}
+.h2 {
+	display: block;
+	color: #000;
+	font-size: 1.1em;
+}
+.articulo .h2{
+	margin-bottom: 0.25em
+}
+.articulo .h2 a{
+	color: #000;
+	border-color: #000;
+}
+
+.articulo a, .articulo a:visited, .articulo a:link, .articulo:active,
+.archivo a, .archivo a:visited, .archivo a:link, .archivo:active,
+.tabla td a, .tabla td a:visited, .tabla td a:link, .tabla td a:active{
+	border-color: #00e;
+	color: #00e
+}
+.h2 a, .h2 a:visited, .h2 a:link, .h2:active{
+	color: #000;
+}
+.h3{
+	font:1.1em ;
+}
+}
+.strong {
+	font-weight: bold;
+}
+.archivo .dia{
+	display: inline-block;
+	width: 20px;
+	text-align: right;
+	margin-right: 10px;
+}
+.archivo li{
+	list-style: none;
+}
+
+}
+.footer{
+	text-align: center
+}
+.tabla {
+	border: solid 4px #ccc;
+	width: 100%;
+}
+.tabla tr{
+	border:1px solid #ccc;
+}
+.tabla td, .tabla th {
+	padding: 0.3em;
+}
+.tabla th{
+	text-align: left;
+}
+.tabla thead, .tabla tfoot {
+	background-color: #ccc;
+}
+.aright,th.aright{
+	text-align: right;
+}
+.comments .avatar{
+	/*width: 100px; no se le da tamaño relativo para que no se pixele*/
+	width: 10%;
+}
+.comments .comment{
+	width: 85%;
+	margin-left: 5%;
+}
+.new-comment * {
+	display: block;
+	margin-top:1em;
+	margin-bottom: 1em;
+}
+.underline{
+	border-bottom:1px dashed #ccc; 
+	
+}
+.form input,
+.form textarea{
+	border:1px solid #ccc;
+	padding:5px;
+	width: 50%;
+}
+.form .row{
+	margin-bottom: 10px;
+}
+.form-rows label,
+.form-row input,
+.form-row textarea {
+	display: block;
+	margin: 5px 0;
+}
+.form-inline label{
+	display: inline-block;
+	width: 15%;
+}
+.form-inline input{
+	display: inline-block;
+}

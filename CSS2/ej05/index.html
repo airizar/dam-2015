@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 	<link rel="stylesheet" type="text/css" href="../normalize.css" title="style" />
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css" title="style" />
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper"><!-- id="wrapper" -->
+		<div class="header"><!-- id="header" -->
+			<h1>My weblog</h1>
+			<!-- <h2 class="blanco negrita">a lot of effort went into making this effortless</h2> -->
+			<!--La descripcion del titulo de la pagina no tiene mayor importancia, ya que no cambia nunca y en SEO se utiliza mucho la busqueda te contenido cambiante-->
+			<p>a lot of effort went into making this effortless</p>
+			<ul class="menu">
+				<li><a href="">home</a></li>
+				<li><a href="">blog</a></li>
+				<li><a href="">gallery</a></li>
+				<li><a href="">about</a></li>
+			</ul>	
+			<!-- 
+			Las dos opciones son válidas
+			<span class="menu">
+				<a href="">home</a>
+				<a href="">blog</a>
+				<a href="">gallery</a>
+				<a href="">about</a>
+			</span> -->
+		</div>
+		<div class="content"><!-- id="content" -->
+			<!--es conveniente crear un bloque de articulos para poder cambiar la posicion de las cajas en un futuro-->
+			<div class="articulos">
+				<div class="articulo">
+						<span class="fright">fecha</span>
+						<h2 class="h2"><a  href="pagina1.html">Travel day</a></h2>
+						
+						<a href="">John Doe</a>
+						<a href="">coments</a>
+						
+
+					
+					<!-- desde css modificaremos el comportamiento en caso de ser necesario
+					<div class="right">fecha</div> -->
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus expedita possimus porro fugiat odit aut dolores ratione sunt, quod facilis architecto quis laboriosam soluta aspernatur. Numquam, quam rem harum id?</p>
+				</div>
+				
+					<div class="articulo">
+						<span class="fright">fecha</span>
+						<h2 class="h2"><a  href="pagina1.html">Travel day</a></h2>
+						
+						<a href="">John Doe</a>
+						<a href="">coments</a>
+						
+
+					
+					<!-- desde css modificaremos el comportamiento en caso de ser necesario
+					<div class="right">fecha</div> -->
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus expedita possimus porro fugiat odit aut dolores ratione sunt, quod facilis architecto quis laboriosam soluta aspernatur. Numquam, quam rem harum id?</p>
+				</div>
+			</div>
+			<div class="archivo">
+				<ol>
+				<!--No se aconseja dejar texto sin ninguna etiqueta por lo que el mes lo metemos en un span-->
+					<li><span class="strong">octubre</span>
+						<ol>
+							<li><span class="dia strong">5</span><a href=""></a>Lorem ipsum dolor sit amet</li>
+						</ol>
+						
+					</li>
+					<li><span class="strong">septiembre</span>
+						<ol>
+							<li><span class="dia strong">7</span><a href=""></a>Lorem ipsum dolor sit amet</li>
+						</ol>
+						
+					</li>
+					<li><span class="strong">julio</span>
+						<ol>
+							<li><span class="dia strong">23</span><a href="">Lorem ipsum dolor sit amet</a></li>
+							<li><span class="dia strong">6</span><a href="">Lorem ipsum dolor sit amet</a></li>
+						</ol>
+						
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="footer"><!-- id="footer"-->			<span> 2011</span><a href="" >Jhon Doe</a>
+		</div>
+	</div>
+</body>
+</html>
