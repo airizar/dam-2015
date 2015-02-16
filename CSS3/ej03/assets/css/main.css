@@ -1,0 +1,156 @@
+/* --------------------------------
+Site:       Site name
+CSS author: Your name here
+Updated:    Date
+Updated by: Your name here
+-------------------------------- */
+
+/* ----------------------------
+simple reset
+---------------------------- */
+
+html, body, ul, ol, li, form, fieldset, legend
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+fieldset,img { border: 0; }
+legend { color: #000; }
+li { list-style: none; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td
+{
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+input, textarea, select
+{
+    font-size: 110%;
+    line-height: 1.1;
+}
+
+abbr, acronym
+{
+    border-bottom: .1em dotted;
+    cursor: help;
+}
+
+body
+{
+    color: #000;
+    background-image: radial-gradient(#fff,#eee);
+    font: 90%/1.3 "DejaVu Sans", "URW Gothic L", "Helvetica Neue", Helvetica, Arial, "Microsoft Sans Serif", sans-serif;
+    /*para empujar todo hacia abajo y que nada se
+    quede debajo del titulo*/
+    padding-top:45px;
+
+}
+
+.header{
+    background:linear-gradient(#ccc 20%,#222);
+    position:fixed;
+    top:0;
+    left:0;
+    /*si lo dejamos así deja de comportarse como bloque
+    para ocupar solo lo que necesita, por lo que hay que 
+    darle un ancho*/
+    width:100%;
+    /*y para que no se tape el menu de abajo se le da un
+    algo fijo*/
+    height:40px;
+}
+.header h1{
+    margin:0;
+    font-size:1em;
+    text-align:center; 
+}
+.container
+{
+    padding:10px;
+}
+.nav,
+.content,
+.extras{
+    background-color:#fff;
+    border:1px solid #ccc;
+    padding:0.5em;
+    }
+}
+.nav
+{
+   
+    margin-bottom:1em;
+}
+.nav li{
+    display:inline-block;
+}
+
+.content
+{
+   
+    margin:1em 0;
+}
+
+.extras
+{    
+  
+}
+
+.feature-image
+{
+    display:none;    
+    
+}
+
+@media (min-width: 768px){
+    * {
+    box-sizing:border-box;
+    }
+    body{
+        padding:0;
+    }
+    .header{
+        background:linear-gradient(#ccc 20%,#222);
+        position:static;
+        width:100%;
+        height:auto;
+    }
+    .header h1{
+        margin:auto;
+        font-size:2em;
+        text-align:left; 
+    }
+    .nav {
+        float:left;
+        width:15%;
+    }
+    .nav li{
+        display:block;
+    }
+    .content
+    {
+        float:left;
+        width:85%;
+        margin:0;
+        
+    }
+    .feature-image{
+        float:right;
+        display:block;
+    }
+    .extras{
+        width:85%;
+        margin-left:15%;
+    }
