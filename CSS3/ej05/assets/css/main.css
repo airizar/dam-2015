@@ -1,0 +1,47 @@
+        body {
+            margin: 0px;
+        }
+        #container{
+            background: #666 url(../img/ej03_tree.jpg) no-repeat -60px 0;
+            width: 420px;
+            height: 480px;
+            position: relative;
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 2em;
+            position: absolute;
+            animation-duration: 10s;
+            animation-name: nevando;
+
+        }
+        .snowflake.f1 {
+            left: 40px;
+
+            
+        }
+        .snowflake.f2 {
+            font-size: 1.8em;
+            left: 120px;
+        }
+        .snowflake.f3 {
+            left: 200px;
+        }
+        .snowflake.f4 {
+            font-size: 1.5em;
+            left: 280px;
+        }
+
+        @keyframes nevando {
+            from {
+                padding-top:0%;
+                opacity:1;
+            }
+            to{
+                padding-top:100%;
+                opacity:0;
+                transform: rotate(90deg) translate(10em,10em) rotate(-90deg);
+            }
+        }
+
+      

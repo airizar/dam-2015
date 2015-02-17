@@ -1,0 +1,46 @@
+     #container { 
+        width: 500px; 
+        height:500px; 
+        
+    }
+    /*Estado inicial de la caja
+    */
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        font-size: 20px;
+        padding: 5px;
+        /*Si lo ponemos en el hover, solo veremos la 
+        transicion hasta el estado final, pero no la 
+        vuelta al estado inicial */
+        transition-property: all;
+        transition-duration: 500ms;
+        transition-timing-function: linear;
+    }
+ 
+    .box:hover {
+        background-color: blue;
+        color: yellow;
+        font-size: 18px;
+    }
+    .a:nth-child(2n+1) .box:hover{
+        transform: translate(900px,100px) rotate(270deg) scale(0.5, 0.5);
+    }
+    .a:nth-child(2n) .box:hover{
+        /*si lo rotamos primero los ejes cambian y al transladarlo x sera
+        la vertical e y en horizontal*/
+        transform: translate(900px,-100px) rotate(270deg) scale(0.5, 0.5);
+    }
+    .ex01 .box {
+        transform: translate(10px, 0px);
+    }
+    .ex02 .box {
+        transform: translate(10px, 10px);
+    }
+    .ex03 .box {
+        transform: translate(10px, 20px);
+    }
+    .ex04 .box {
+        transform: translate(10px, 30px);
+    }
