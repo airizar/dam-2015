@@ -17,6 +17,34 @@
 #clock div {
     position: absolute;
 }
+#second{
+    animation-duration: 60s;
+    animation-name: clock;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
 
+}
+#minute{
+    animation-duration: 3600s;
+    animation-name: clock;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+}
+#hour{
+    animation-duration: 43200s;
+    animation-name: clock;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+
+}
 
 /* ANIMACIONES Y TRANSFORMACIONES */
+
+@keyframes clock {
+    from { 
+        transform:rotate(0deg);
+     }
+    to {  
+        transform:rotate(360deg);
+    }
+}
