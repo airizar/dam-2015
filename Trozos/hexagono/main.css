@@ -1,11 +1,29 @@
 .rombo {
-  width: 300px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
-  color:white;
+  
 }
 
 .centro{
-	width:100%;
+	width:88px;
+	height: 51px;
 	background-color:black;
-
+   color:blue;
+   overflow: hidden;
+   margin: 0 auto;
+}
+.superior{
+	width:0px;
+margin: 0 auto;
+	border-left:44px solid transparent;
+	border-right:44px solid transparent;
+	border-bottom:26px solid black;
+}
+.inferior{
+	width:0px;
+margin: 0 auto;
+	border-left:44px solid transparent;
+	border-right:44px solid transparent;
+	border-top:26px solid black;
 }
