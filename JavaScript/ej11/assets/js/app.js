@@ -1,1 +1,3 @@
-document.getElementById('login').validate();
+window.onload=function(){
+	document.getElementById('registro').validate();	
+};

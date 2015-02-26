@@ -59,16 +59,7 @@ HTMLFormElement.prototype.validate = function() { /*objeto utilidades*/
                     
                 }
             }
-            //Si lo hago de este modo tendria que tener diferentes validadores
-            //required para cada tipo input
-            // switch (required[i].type) {
-            //     case "text":
-            //         if (!validador.required(required[i].innerText)) {
-            //             //añadir error
-            //             msgError.push("El campo " + required[i].id);
-            //         }  
-            //         break;    
-            // }
+
         var countMail=email.length;
         for (var i = 0; i <=email.length-1; i++) {
             if (!validador.email(email[i])) {
@@ -84,25 +75,51 @@ HTMLFormElement.prototype.validate = function() { /*objeto utilidades*/
         }
 
     };
+    // var validateForm=function(e){
+    //     //aqui this es window
 
+    //     //for(required)
+
+    //     funcionRepetida.call(required item)
+    // };
+    
+    // var validateField=function(e){
+    //     forI()
+    //     this.call(this)
+    // };
 
     /*1.-ha esta funcion se le llama desde un formulario, asi que this, sera el 
     formulario que le llama*/
 
-    this.addEventListener('submit', validate, false);
+    this.addEventListener('submit', validateForm, false);
     for (var i = 0; i <=required.length-1; i++) {
         required[i].addEventListener('blur',validateField,false);  
             }
 
 };
 
-
-
 /*
+funcionrepetida(e)
+errors[]
+if checkbox and !cheked{
+    errors push
+   } else if password{
+        if not validate password
+            error push
+    } else { if not required
+                error push()
+                }
+   }
+if(errors.length){
+    showError.call(this,erros.join('\n'));
+}
+   var showError=function(msgerror){
+    createelement span
+    span claslistadd helpblock
+    span innertext msgerror
 
+    this.parentnode.classlist.add('has-error');
+    this.parentnode.querySelectorAll('.hidden').item(0).classlist.remove('hidden');
+
+   }
 */
-
-
-
-
-
