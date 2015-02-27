@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--la forma de decirle cual es la base de la aplicacion-->
+<html lang="en" ng-app='todoApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/vendor/angular.min.js"></script>
+</head>
+
+<body>
+	
+    <div class="wrapper">
+        <h2>Todo Lost</h2>
+        <!--Todo lo que este dentro de este div, sera controlado por TodoController-->
+        <div class="well"  ng-controller='TodoController'>
+        	<!--El botton del formulario tiene que ser un input de tipo submit-->
+            <form action="#" class="form-inline ng-pristine ng-valid" ng-submit="addTodo()">
+                <div class="form-group">
+                    <input type="text" size='40' class="form-control" ng-model="inputText">
+                    <button class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>
+                </div>
+            <ul class="list-unstyled">
+            	<li ng-repeat="todo in todos"><!--$scope['todos']-->
+            		<!--Llaves para imprimir valores
+            			se pone ng-model para que el modelo y la vista esten sincronizados-->
+            		<input type="checkbox" ng-model="todo.done"></input>
+            		<span>{{todo.task}}</span>
+            	</li>
+            	<!--al meter el ng-repeat ya no nos sirven los li,-->
+            	<!--
+            	<li>
+            		<input type="checkbox"></input>
+            		<span>item 2</span>
+            	</li>
+            	<li>
+            		<input type="checkbox"></input>
+            		<span>item 3</span>
+            	</li>
+            	<li>
+            		<input type="checkbox"></input>
+            		<span>item 4</span>
+            	</li>
+            	<li>
+            		<input type="checkbox"></input>
+            		<span>item 5</span>
+            	</li>-->
+            </ul>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
