@@ -12,7 +12,7 @@ App.Model.Rectangulo=(function(){
 	}
 	//Indicamos el padre
 	Rectangulo.prototype=Object.create(App.Model.Cuadrado.prototype);
-	Rectangulo.prototype.constructor=Rectangulo;
+	//Rectangulo.prototype.constructor=Rectangulo;
 	
 	
 	Rectangulo.prototype.getAncho=function(){

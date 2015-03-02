@@ -15,7 +15,7 @@ App.Model.Circulo=(function(){
 	//Circulo.prototype=new App.Model.Figura();
 	//Circulo.prototype.constructor=App.Model.Figura;
 	Circulo.prototype=Object.create(App.Model.Figura.prototype);
-	Circulo.prototype.constructor=Circulo;
+	//Circulo.prototype.constructor=Circulo;
 
 	Circulo.prototype.getRadio=function(){
 		return _radio;

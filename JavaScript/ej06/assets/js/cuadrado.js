@@ -12,7 +12,7 @@ App.Model.Cuadrado=(function(){
 	}
 	//Indicamos el padre
 	Cuadrado.prototype=Object.create(App.Model.Figura.prototype);
-	Cuadrado.prototype.constructor=Cuadrado;
+	//Cuadrado.prototype.constructor=Cuadrado;
 	
 	
 	Cuadrado.prototype.getAlto=function(){
